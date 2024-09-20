@@ -4,10 +4,10 @@ library(flametree)
 name <- "exe"
 
 # pick a seed
-this_seed <- 42257689
+this_seed <- 42051105
 
 # pick some colours
-shades <- c("red", "green", "blue", "orange")
+shades <- c("blue", "yellow", "blue", "yellow")
 
 # data structure defining the trees
 dat <- flametree_grow(seed = this_seed, time = 10, trees = 10)
@@ -23,3 +23,4 @@ tree <- dat %>%
 tree
 # save the plot
 flametree_save(tree, filename = paste0("fig/tree_", name, ".png"))
+
